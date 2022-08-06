@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "a simple restaurant page generated with javascript. Meant to practice webpack and javascript modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alienatedlabor/Restaurant-Page.git"
+  },
+  "author": "Cole Heideman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alienatedlabor/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/Alienatedlabor/Restaurant-Page#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
