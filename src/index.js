@@ -1,3 +1,3 @@
 import './style.css';
-import './home.js';
+import { home } from './home.js';
 console.log('webpack is working ooh');
