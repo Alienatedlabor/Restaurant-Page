@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Tangerine:wght@400;700&family=Uchen&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
+  font-family: 'Uchen', serif, 'Lato', sans-serif;
   background-color: #12130f;
 }
 button {
@@ -12,7 +14,7 @@ button {
 header {
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   text-align: center;
@@ -20,6 +22,15 @@ header {
 nav {
   font-size: 18px;
   color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Tangerine', cursive;
 }
 ul {
   display: flex;
@@ -31,6 +42,12 @@ ul {
 li {
   border-right: solid #73956f;
   padding-right: 3px;
+  transition: 0.4s;
+}
+/*I would like an animation here that draws the bottom line in from the right
+also need to fix the jumping from the line appearing. */
+li:hover {
+  border-bottom: solid 1px #73956f;
 }
 .container {
   display: flex;
