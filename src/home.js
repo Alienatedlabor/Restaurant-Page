@@ -1,5 +1,3 @@
-// import './assets/hero.jpg';
-// import './assets/chef.jpg';
 const home = (() => {
   //hero container
   const container = document.querySelector('#content');
