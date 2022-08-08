@@ -21,11 +21,13 @@ const home = (() => {
   const heroButton = document.createElement('button');
   heroButton.classList.add('hero-btn');
   heroButton.textContent = 'About Us!';
+  heroButton.setAttribute('href', '#about');
   heroContainer.append(heroButton);
 
   //about us div
   const aboutDiv = document.createElement('div');
   aboutDiv.classList.add('about');
+  aboutDiv.setAttribute('id', 'about');
   container.append(aboutDiv);
   //about us text
   const aboutParagraph = document.createElement('p');
@@ -35,5 +37,15 @@ const home = (() => {
   aboutDiv.appendChild(aboutParagraph);
   //about image
   const aboutImage = document.createElement('img');
+  aboutImage.src =
+    'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?cs=srgb&dl=pexels-elevate-1267320.jpg&fm=jpg';
+  aboutImage.classList.add('image');
+  container.append(aboutImage);
+  //fine print
+  const finePrint = document.createElement('p');
+  finePrint.classList.add('fine-print');
+  finePrint.textContent = 'All food is consumed at your own risk.';
+  container.append(finePrint);
+  return container;
 })();
 export { home };
